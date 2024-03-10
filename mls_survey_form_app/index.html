@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>MLS Season Pass Survey</title>
+    </head>
+    <body>
+        <div id="image-div">
+        <img id="mls-logo" src="images/mls_logo.svg.png" alt="MLS league logo" />
+        <img id="apple-logo" src="images/apple_logo.png" alt="Apple TV logo" />
+        </div>
+        <h1 id="title">MLS Season Pass Survey</h1>
+        <p id="description">A survey about the MLS Season Pass streaming package</p>
+        <form id="survey-form">
+        <fieldset>
+            <legend>Basic information</legend>
+            <label id="name-label">Name: <input id="name" type="text" placeholder="First Last" required /></label>
+            <label id="email-label">Email: <input id="email" type="email" placeholder="username@email.com" required /></label>
+            <label id="number-label">Age: <input id="number" type="number" min="13" max="120" placeholder="13+ years or older" required /></label>
+            <label>Favorite club: 
+            <select id="dropdown">
+                <option>(select one)</option>
+                <option>Columbus Crew</option>
+                <option>D.C. United</option>
+                <option>LA Galaxy</option>
+                <option>Seattle Sounders</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>What type of ad experience do you prefer?</legend>
+            <label><input class="inline" type="radio" value="no-ads" name="ad-radio" /> No ads</label>
+            <label><input class="inline" type="radio" value="halftime-ads" name="ad-radio" /> Extended ads at halftime</label>
+            <label><input class="inline" type="radio" value="game-ads" name="ad-radio" /> Occasional in-game ad breaks</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is valuable to you on a sports stream?</legend>
+            <label><input class="inline" type="checkbox" value="1" /> 4K video</label>
+            <label><input class="inline" type="checkbox" value="2" /> Local radio audio</label>
+            <label><input class="inline" type="checkbox" value="3" /> Extended pre and post game analysis</label>
+            <label><input class="inline" type="checkbox" value="4" /> Social media feed</label>
+        </fieldset>
+        <fieldset>
+            <legend>Is there anything else you'd like to add?</legend>
+            <textarea rows="4"></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+    </html>
